@@ -2,6 +2,8 @@
 
 # build a double-precision version of lammps for adroit (cpu)
 
+SBATCH --constraint=ice
+
 VERSION=22Jul2025
 wget https://github.com/lammps/lammps/archive/refs/tags/stable_${VERSION}.tar.gz
 tar zxf stable_${VERSION}.tar.gz
