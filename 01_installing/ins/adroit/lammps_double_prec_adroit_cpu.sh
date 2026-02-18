@@ -21,6 +21,7 @@ cmake3 -D CMAKE_INSTALL_PREFIX=$HOME/.local \
 -D CMAKE_BUILD_TYPE=Release \
 -D CMAKE_CXX_COMPILER=icpx \
 -D CMAKE_CXX_FLAGS_RELEASE="-Ofast -xHost -qopenmp -DNDEBUG" \
+-D PKG_EXTRAPAIR=yes \
 -D PKG_MOLECULE=yes \
 -D PKG_RIGID=yes \
 -D PKG_KSPACE=yes -D FFT=MKL -D FFT_SINGLE=no  ../cmake
